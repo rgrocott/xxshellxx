@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="/resources/css/core.css" rel="stylesheet" media="screen" />
+    <link href="/resources/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" media="screen" />
+    <script src="/resources/js/jquery-1.11.3.min.js"></script>
+	<script src="/resources/js/jquery-ui.custom.js"></script>
+	<script src="/resources/js/modernizr.js"></script>
+	<script src="/resources/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div th:replace="fragments/header :: header">&nbsp;</div>
+<div class="container" layout:fragment="content">
+        <!--
+          PLACEHOLDER CONTENT THAT WILL BE REPLACED BY THE TEMPLATE ENGINE
+        -->
+        <p>
+            PLACEHOLDER CONTENT THAT WILL BE REPLACED BY THE TEMPLATE ENGINE
+        </p>
+</div>
+
+</body>
+</html>

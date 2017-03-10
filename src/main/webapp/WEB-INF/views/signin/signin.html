@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="clear compress" />
+    <meta name="author" content="clear compress" />
+    <link rel="icon" href="favicon.ico" />
+
+    <title>Sign In</title>
+
+	<!-- Bootstrap core CSS -->
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="/resources/css/core.css" rel="stylesheet" media="screen" />
+    <link href="/resources/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" media="screen" />
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link href="/resources/css/ie10-viewport-bug-workaround.css" rel="stylesheet" />
+
+	<!-- font Awesome -->
+	<link href="/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+  </head>
+  <body>
+
+
+    
+<div class="container">
+    <div class="row center-block text-center col-md-10">
+    <h2>Sign In </h2>
+    <div class=" col-md-8 centr-block">
+    
+    <!-- FORM ================================= -->
+    <form id="sign-in-form" action="#" method="post" th:action="@{/authenticate}">
+    
+    <fieldset>
+        <div>
+            <label for="inputEmail">Username</label>
+            <div>
+                <input class="form-control" id="inputEmail" placeholder="Email" name="username" type="text" />
+            </div>
+        </div>
+        <div>
+            <label for="inputPassword">Password</label>
+            <div>
+                <input class="form-control" id="inputPassword" placeholder="Password" name="password" type="password" />
+            </div>
+        </div>
+        <div>
+            <div class="">
+                <div class="checkbox">
+                    <label>
+                        <input name="_spring_security_remember_me" type="checkbox" /> Remember me
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group center-block row col-md-12 text-center">
+            <div class="">
+                <button class="btn btn-primary btn-lg submit-button">Sign in</button>
+            </div>
+        </div>
+    </fieldset>
+    </form> 
+</div>
+  </div>
+  </div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+
+<script src="/resources/js/jquery-1.11.3.min.js"></script>
+<script src="/resources/js/jquery-ui.custom.js"></script>
+<script src="/resources/js/modernizr.js"></script>
+<script src="/resources/js/bootstrap.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/resources/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
